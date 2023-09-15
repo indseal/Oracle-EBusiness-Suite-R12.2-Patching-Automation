@@ -1,4 +1,16 @@
-Below is sequence of steps to download and apply EBS patch through this tool.
+Description: 
+This tool is used to download and apply patch on EBS R12.2.x or check if a patch is applied or not. This tool is built for Oracle EBusiness Suite R12.2.x on Linux X86_64 platform. It will work for both single node as well as multinode architecture.
+
+Main Script: 
+ebs_apps_patch.sh
+
+Other software required: 
+getMOSPatch.jar & jdk1.7.0_301
+
+Location: /home/applmgr/Neil_scripts/auto_patch
+(All the below steps need to be executed from the above location. This is also default patch download location)
+
+Below is sequence of steps to download and apply EBS R12.2 patch through this tool.
 
 Step 1: Check ADOP Status to confirm if there is any running patch cycle
 •	sh ebs_apps_patch.sh adop_status
