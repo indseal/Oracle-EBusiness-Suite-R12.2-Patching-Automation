@@ -10,6 +10,13 @@ getMOSPatch.jar & jdk1.7.0_301
 Location: /home/applmgr/Neil_scripts/auto_patch
 (All the below steps need to be executed from the above location. This is also default patch download location)
 
+Few important points:
+
+1. Under the function download_patch, update the MOSUser and MOSPass as well as the Platform/Patch (platform=226P,3L) to your respective environment
+
+2. Under the main section, update the environment run file path, PATCH_TOP_DIR(in case you are staging the scripts in a separate location)
+Finally, also update the apps, system and weblogic passwords.
+
 Below is sequence of steps to download and apply EBS R12.2 patch through this tool.
 
 Step 1: Check ADOP Status to confirm if there is any running patch cycle
