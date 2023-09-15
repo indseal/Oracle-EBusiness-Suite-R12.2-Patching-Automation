@@ -36,6 +36,8 @@ Step 6: Finalize, cutover & cleanup(combined into one single step)
 
 Step 7: Finally, run fs_clone to sync run and patch file systems
 •	sh ebs_apps_patch.sh fs_clone
+(if fs_clone has failed for any reason, we need to fix the issue and may need to trigger fs_clone with force option. In that case, use the command – 
+sh ebs_apps_patch.sh fs_clone_force)
 
 Step 8: Check ADOP Status 
 •	sh ebs_apps_patch.sh adop_status
